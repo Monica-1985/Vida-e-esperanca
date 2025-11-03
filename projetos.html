@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os projetos da ONG Vida e Esperança.">
+  <title>Projetos - Vida e Esperança</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; transition: background-color 0.4s, color 0.4s; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+
+  <!-- ======= CABEÇALHO ======= -->
+  <header class="bg-blue-800 shadow-md dark:bg-blue-900">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-teal-400 dark:text-teal-300">Vida e Esperança</h1>
+
+      <button class="menu-toggle text-3xl md:hidden focus:outline-none text-white">☰</button>
+
+      <ul id="menu-links" class="hidden md:flex space-x-6 text-white font-semibold">
+        <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
+        <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
+        <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
+      </ul>
+
+      <button id="theme-toggle"
+        class="ml-4 p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200">
+        🌙
+      </button>
+    </nav>
+
+    <div id="menu-mobile" class="hidden bg-blue-900 text-white md:hidden">
+      <ul class="flex flex-col items-center space-y-4 py-4 font-semibold">
+        <li><a href="index.html" class="hover:text-teal-300">Início</a></li>
+        <li><a href="projetos.html" class="hover:text-teal-300">Projetos</a></li>
+        <li><a href="cadastro.html" class="hover:text-teal-300">Cadastro</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ======= CONTEÚDO ======= -->
+  <main class="container mx-auto px-6 py-12">
+    <h2 class="text-4xl font-bold text-blue-800 mb-10 text-center dark:text-teal-300">
+      Nossos Projetos
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+        <img src="imagens/doa-roupas.png" alt="Projeto Educação" class="rounded-md mb-4 mx-auto">
+        <h3 class="text-2xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Vestes para Todos</h3>
+        <p>Arrecadamos roupas usadas e semi novas para auxiliar a população mais vulnerável.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+        <img src="imagens/doa-cesta.png" alt="Projeto Saúde" class="rounded-md mb-4 mx-auto">
+    
+    
+        <h3 class="text-2xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Campanha de Doaçao</h3>
+        <p>Promovemos campanhade doação de alimentos com foco em comunidades carentes.</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+        <img src="imagens/projeto3.jpg" alt="Projeto Sustentabilidade" class="rounded-md mb-4 mx-auto">
+        <h3 class="text-2xl font-semibold text-teal-600 dark:text-teal-400 mb-2">Sustentabilidade Comunitária</h3>
+        <p>Incentivamos hortas urbanas e o uso consciente dos recursos naturais.</p>
+      </div>
+    </div>
+
+     <section class="bg-teal-700 text-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-3xl font-semibold mb-6 text-center">Como Doar</h3>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-lg leading-relaxed mb-6">
+                    Sua doação é fundamental para mantermos nossos projetos ativos. Cada contribuição, não importa o valor, faz uma enorme diferença na vida de centenas de pessoas.
+                </p>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-inner">
+                    <h4 class="text-2xl font-bold text-teal-600 mb-4">Doe via PIX</h4>
+                    <p class="text-xl font-mono bg-gray-100 p-3 rounded">
+                        chave-pix@vidaeesperanca.org
+                    </p>
+                    <p class="mt-4">Ou, se preferir, faça uma transferência bancária:</p>
+                    <ul class="mt-2 text-left w-fit mx-auto">
+                        <li><strong>Banco:</strong> 123 - Banco Exemplo S.A.</li>
+                        <li><strong>Agência:</strong> 0001</li>
+                        <li><strong>Conta Corrente:</strong> 12345-6</li>
+                        <li><strong>CNPJ:</strong> 12.345.678/0001-99</li>
+                    </ul>
+  </main>
+
+  <!-- ======= RODAPÉ ======= -->
+  <footer class="bg-gray-800 text-white mt-16 py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Vida e Esperança. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
