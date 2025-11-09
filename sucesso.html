@@ -9,43 +9,71 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     body {
-        font-family: 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Animação suave de entrada */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out;
     }
   </style>
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 flex flex-col min-h-screen">
 
-    <header class="bg-white shadow-md dark:bg-gray-800">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500"> Vida e Esperança </h1>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Início</a></li>
-                <li><a href="projetos.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Projetos</a></li>
-                <li><a href="cadastro.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Cadastro</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- ======= CABEÇALHO ======= -->
+  <header class="bg-white shadow-md dark:bg-gray-800">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500">Vida e Esperança</h1>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Início</a></li>
+        <li><a href="projetos.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Projetos</a></li>
+        <li><a href="cadastro.html" class="text-gray-600 hover:text-teal-600 transition duration-300 dark:text-gray-300 dark:hover:text-teal-500">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container mx-auto px-6 py-12 flex-grow flex items-center justify-center">
-        <div class="bg-white dark:bg-gray-800 p-10 rounded-lg shadow-lg max-w-lg text-center">
-            <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500 mb-4">✅ Cadastro enviado com sucesso!</h1>
-            <p class="text-gray-700 dark:text-gray-200 mb-6">
-              Obrigado por se cadastrar na <strong>ONG Vida e Esperança</strong>!   
-              Em breve entraremos em contato por e-mail.
-            </p>
-            <a href="index.html" 
-               class="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition duration-300">
-               Voltar ao Início
-            </a>
-        </div>
-    </main>
+  <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+  <main class="container mx-auto px-6 py-12 flex-grow flex items-center justify-center">
+    <div class="bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-lg max-w-lg text-center fade-in-up">
 
-    <footer class="bg-gray-800 text-gray-200 mt-16 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 ONG Vida e Esperança. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+      <!-- Ícone animado -->
+      <div class="flex justify-center mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-teal-600 dark:text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+
+      <h1 class="text-3xl font-bold text-teal-600 dark:text-teal-500 mb-4">✅ Cadastro enviado com sucesso!</h1>
+      <p class="text-gray-700 dark:text-gray-200 mb-6">
+        Obrigado por se cadastrar na <strong>ONG Vida e Esperança</strong>!  
+        Em breve entraremos em contato por e-mail.
+      </p>
+
+      <a href="index.html"
+         class="bg-teal-600 text-white px-8 py-3 rounded-lg hover:bg-teal-700 transition duration-300 font-semibold shadow-md">
+         Voltar ao Início
+      </a>
+    </div>
+  </main>
+
+  <!-- ======= RODAPÉ ======= -->
+  <footer class="bg-gray-800 text-gray-200 mt-16 py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 ONG Vida e Esperança. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
