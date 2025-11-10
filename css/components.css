@@ -1,80 +1,96 @@
-/* ==========================================================
-   💡 VIDA E ESPERANÇA | COMPONENTS.CSS
-   Componentes de interface (menu, cards, formulários, etc.)
-   ========================================================== */
+/* --- GERAL E PADRÕES --- */
+.menu,
+.submenu {
+  list-style: none;
+}
 
-/* ------------------------------
-   NAVBAR RESPONSIVA
---------------------------------*/
+.menu li a,
+.submenu li a {
+  padding: var(--espaco-1) var(--espaco-2);
+}
+
+.card,
+.submenu {
+  box-shadow: var(--sombra-suave);
+}
+
+.card h3,
+.logo {
+  font-size: var(--fonte-media);
+}
+
+.menu,
+form {
+  display: flex;
+  gap: var(--espaco-2);
+}
+
+.card,
+.menu li a,
+input,
+select,
+textarea {
+  transition: var(--transicao);
+}
+
+/* --- NAVBAR --- */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--cor-primaria);
   padding: var(--espaco-2) var(--espaco-4);
-  color: white;
+  color: #fff;
   position: relative;
 }
 
 .logo {
-  font-weight: bold;
-  font-size: var(--fonte-media);
+  font-weight: 700;
 }
 
-.menu {
-  display: flex;
-  list-style: none;
-  gap: var(--espaco-2);
-}
-
+/* --- MENU PRINCIPAL --- */
 .menu li a {
-  color: white;
-  padding: var(--espaco-1) var(--espaco-2);
+  color: #fff;
   border-radius: 8px;
-  transition: var(--transicao);
 }
 
 .menu li a:hover {
   background: var(--cor-secundaria);
 }
 
-/* Dropdown */
+/* --- SUBMENU (DROPDOWN) --- */
 .submenu {
   display: none;
   position: absolute;
-  background: white;
+  background: #fff;
   color: var(--cor-texto);
-  list-style: none;
   padding: var(--espaco-1) 0;
   border-radius: 8px;
-  box-shadow: var(--sombra-suave);
 }
 
-.dropdown:hover .submenu {
-  display: block;
-}
-
+/* Mostra o submenu quando o item "dropdown" é "hover" */
+.dropdown:hover .submenu,
 .submenu li a {
   display: block;
-  padding: var(--espaco-1) var(--espaco-2);
 }
 
 .submenu li a:hover {
   background: var(--cor-destaque);
 }
 
-/* Menu Mobile */
+/* --- MENU MOBILE (HAMBÚRGUER) --- */
 .menu-toggle {
   display: none;
-  background: none;
+  background: 0 0;
   border: none;
   font-size: 1.8rem;
-  color: white;
+  color: #fff;
 }
 
+/* --- RESPONSIVIDADE (MEDIA QUERY) --- */
 @media (max-width: 768px) {
   .menu {
-    display: none;
+    display: none; /* Escondido por padrão */
     flex-direction: column;
     background: var(--cor-primaria);
     position: absolute;
@@ -83,24 +99,22 @@
     width: 100%;
   }
 
+  /* Mostra o menu quando tem a classe .show (via JavaScript) */
   .menu.show {
     display: flex;
   }
 
+  /* Mostra o botão hambúrguer */
   .menu-toggle {
     display: block;
   }
 }
 
-/* ------------------------------
-   CARDS DE PROJETOS
---------------------------------*/
+/* --- CARD --- */
 .card {
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: var(--sombra-suave);
   padding: var(--espaco-3);
-  transition: var(--transicao);
   text-align: center;
 }
 
@@ -114,36 +128,31 @@
 }
 
 .card h3 {
-  font-size: var(--fonte-media);
   margin-bottom: var(--espaco-1);
 }
 
-/* ------------------------------
-   FORMULÁRIOS
---------------------------------*/
+/* --- FORMULÁRIO --- */
 form {
-  display: flex;
   flex-direction: column;
-  gap: var(--espaco-2);
   max-width: 500px;
 }
 
-input, textarea, select {
+input,
+select,
+textarea {
   padding: var(--espaco-2);
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: var(--fonte-base);
-  transition: var(--transicao);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: var(--cor-secundaria);
-  outline: none;
+  outline: 0;
 }
 
-/* ------------------------------
-   FEEDBACK (alerts, toasts)
---------------------------------*/
+/* --- ALERTAS --- */
 .alert {
   padding: var(--espaco-2);
   border-radius: 8px;
@@ -165,9 +174,7 @@ input:focus, textarea:focus {
   color: #856404;
 }
 
-/* ------------------------------
-   BADGES E TAGS
---------------------------------*/
+/* --- BADGE (ETIQUETA) --- */
 .badge {
   display: inline-block;
   background: var(--cor-destaque);

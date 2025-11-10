@@ -1,47 +1,37 @@
-# 🌐 Projeto ONG Vida Esperança
+# 🌱 ONG Vida e Esperança
 
-Este repositório contém o código-fonte do site institucional desenvolvido para a "ONG Vida Esperança".
+Site desenvolvido para a disciplina de Experiência Prática IV – Versionamento, Acessibilidade e Deploy.
 
-[![Deploy](https://img.shields.io/badge/Ver%20Site-Deploy-blue)](https://monica-1985.github.io/ongvidaesperanca/)
+## 🚀 Objetivo
+Apresentar um site acessível, responsivo e otimizado, com práticas profissionais de versionamento e deploy.
 
-## 🚀 Sobre o Projeto
+## 🧩 Tecnologias Utilizadas
+- HTML5
+- CSS3 (Tailwind)
+- JavaScript
+- Git e GitHub
+- GitHub Pages
 
-O objetivo deste projeto foi criar uma página web (landing page) estática para uma organização não governamental fictícia. O site serve como um cartão de visitas digital, apresentando a missão da ONG, suas áreas de atuação e incentivando o apoio e doações.
+## 🔗 Deploy
+Acesse o site publicado:  
+👉 [https://monica-1985.github.io/vida-e-esperanca/](https://monica-1985.github.io/vida-e-esperanca/)
 
-Este é um projeto focado no desenvolvimento **front-end**, utilizando tecnologias web fundamentais.
+## 🦾 Recursos Implementados
+- Navegação por teclado
+- Alto contraste e modo escuro
+- Estrutura semântica (WCAG 2.1 AA)
+- Imagens otimizadas
+- Código minificado
 
-## 🖥️ Demonstração (Deploy)
+## 🧠 Organização GitFlow
+- Branch principal: `main`
+- Desenvolvimento: `dev`
+- Funcionalidades: `feature/...`
+- Commits semânticos e Pull Requests documentados
 
-Você pode visualizar o site em funcionamento através do GitHub Pages no link abaixo:
-
-**[https://monica-1985.github.io/vidaeesperanca/)**
-
-## 🛠️ Tecnologias Utilizadas
-
-O projeto foi construído utilizando as seguintes tecnologias:
-
-* **HTML5:** Para a estrutura semântica e organização do conteúdo.
-* **CSS3:** Para a estilização, layout (incluindo o uso de Flexbox/Grid, se aplicável) e responsividade.
-* **JavaScript (Opcional):** (Adicionar aqui se você usou JS para alguma interatividade, como um menu mobile, slideshow ou validação de formulário).
-
-## 📂 Como Executar o Projeto
-
-Como este é um projeto puramente front-end (estático), não há necessidade de instalação de dependências.
-
-Você pode simplesmente clonar o repositório e abrir o arquivo `index.html` no seu navegador de preferência.
-
-```bash
-# 1. Clone o repositório
-git clone [https://github.com/Monica-1985/ongvidaesperanca.git](https://github.com/Monica-1985/ongvidaesperanca.git)
-
-# 2. Acesse a pasta do projeto
-cd ongvidaesperanca
-
-# 3. Abra o index.html no seu navegador
-# (Pode ser feito clicando duas vezes no arquivo)
-
-👩‍💻 Autora
-Desenvolvido por Mônica (@Monica-1985).
+## 👩‍💻 Autora
+**Monica Soares Sena**  
+Projeto acadêmico – 2025
 
 
 
